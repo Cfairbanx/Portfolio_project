@@ -1,0 +1,217 @@
+/*BODY*/
+body {
+    margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+}
+
+/*NAVBAR*/
+.Navbar {
+    overflow: hidden; /*So that content does not overflow the boundary*/
+    background-color: black; 
+    position: fixed; /*This keeps the navbar at the top of the screen*/
+    top: 0; /*This ensures no space is displayed aboe the the navbar*/
+    width: 100%; /*This makes the navbar span the page*/
+    z-index: 1; /*This ensures that nothing displays over the navbar*/
+}
+
+.Navbar a {
+    float: left; /*This orients the text to the left*/
+    display: block; /* this ensures that the text will be displayed on the same line/row */
+    color: white; 
+    padding: 14px 16px; /*This adds padding around text*/
+    text-decoration: none; /*This gets rid of underlings under the text*/
+    font-family: Avant Garde, Helvetica; 
+    font-size: 20px;
+    text-align: center; /*This centers the text in it's container*/
+}
+
+.Navbar a:hover {  /*navbar home button*/
+    background-color: #F4F4F4; /*This defines the font color that will display when you hover over the text on the navbar*/
+    color: black; /*This defines the font color that will display when you hover over the text on the navbar*/
+    font-weight: bold; /* This makes the text on the navbar bold when hovered over*/
+}
+
+.Navbar a.active { /*Navbar home button, active selecter styles a link*/
+    background-color: lightslategray; 
+}
+
+/*VIDEO*/
+#Typing_Video {
+    position: fixed; /*This fixes our video to the page*/
+    right: 0; /*This ensures no space between the video and the edge of the page*/
+    bottom: 0; /*This enures no space between the edge of the video and edge of the page*/
+    min-width: 100%; /*This ensures the video is displayed across the full width of the page*/
+    z-index: -1;
+}
+
+.Video_Text { /*Text over the video*/
+    background: rgba(0,0,0,0.5); /*This provides a semi-transparent background for the text*/
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23%;
+}
+
+/*TABLE- this section covers the styling of the columns and rows within our table */
+* { /*universal selector*/
+    box-sizing: border-box; /*This creats a box with a border where we will plac our text*/
+}
+
+.Column_1 {
+    float: left;
+    width: 50%; /*This ensures the column will only take up half the page*/
+    padding: 10px;
+    padding-top: 3%; /*This ensures there is space between the top of the column and our headings*/
+    height: 400px; /*This sets the height of our column at 400 pixels - if you change the text in the columns you will need to adjust the column height accordingly*/
+    background-color: #f2f2f2;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: lightslategray;
+}
+
+.Column_3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.5%;
+    height: 450px;
+    background-color: lightslategray;
+}
+
+.Row:after { /*This inserts something after the content of selected elements*/
+    content: ""; /*By leaving this blank, we are allowing the footer to be displayed - removing it makes the footer overwrite a column*/
+    display: table; /*The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table*/
+    clear: both; /*This clears any other elements from floating on the left or the right of an element*/
+}
+
+/* HEADING 1*/
+h1 {
+    text-transform: uppercase; /*We are capitilizing our headings*/
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%; /*We are adding a small margin above the heading*/
+    color: #1a1a1a;
+}
+
+/*PARAGRAPH ELEMENTS*/
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify; 
+    letter-spacing: 1px; /*This epands the stext slightly*/
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* CENTER ALIGN ELEMENTS - this embraces all centered text*/
+center {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*ANCHOR ELEMENTS*/
+a {
+    color: blue; /*All links to be blue*/
+}
+
+/*QUOTE ELEMENTS*/
+q {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*IMAGE ELEMENTS*/
+img {
+    filter: grayscale(75%); /*This rids our pictures of 75% of their color*/
+    border-radius: 8px; /*Gives our images slightly rounded edges*/
+    max-width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto; /*This in combination with margin-right: auto centers our images*/
+    display: block; /*By specifying block display we can ensure our images are able to be centered*/
+}
+
+/*CONTACT FORM*/
+input[type=text] { /*This covers the input sections of the contact form*/
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /*We are setting a solid border and it's colors*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /*This specifies how an element is resized; vertical allows the user to resize the height of the element*/
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/*SUBMIT FORM*/
+input[type=submit] { /*This covers the submit button for the contact form*/
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input[type=submit]:hover {
+    background-color: white; /*Makes the submit button turn white*/
+    color: black; /*Makes the font turn black*/
+    font-weight: bold; /*Makes the font bold*/
+    transform: scale(1.5); /*Makes the button increase 1/5 times it's size*/
+    transition: transform 1.5s; /*Makes the transform effect last 1 second*/
+}
+
+/*FORM ELEMENT*/
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: "Trebuchet MS", Optima;
+}
+
+/*CENTER ALIGN ELEMENT HOVER EFFECT*/
+center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/*PARAGRAPH ELEMENT HOEVER EFFECT*/
+p:hover {
+    color: #00004d;
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/*HEADING 1 ELEMENT HOVER EFFECT*/
+h1:hover {
+    color: black;
+    font-weight: normal; /*Makes the text no longer bold when hovered*/
+}
+
+/*IMAGE ELEMENT HOVER EFFECTS*/
+img:hover {
+    filter: grayscale(5%); /*Brings back most of the image's color*/
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+/*FOOTER ELEMENT*/
+footer {
+    padding: 2%;
+    background-color: white;
+}
