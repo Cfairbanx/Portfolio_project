@@ -1,210 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HEAD -->
-    <head>
-        <meta characterset="UTF-8">
-        <title>Casey Fairbanks</title>
-        <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
-    </head>
+<head>
+  <meta characterset="UTF-8">
+  <title>Casey Fairbanks</title>
+  <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+</head>
 
 <!-- BODY -->
 
 <body class="Background">
 
-<!-- NAVBAR -->
-    <div class="Navbar">
-        <a class="active" href="#Home">Home</a>
-        <a href="#Slideshow">Slideshow</a>
-        <a href="#About">About</a>
-        <a href="#Github">Github</a>
-		<a href="#Noteworthy">Projects</a>
-        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+  <!-- NAVBAR -->
+  <div class="Navbar">
+    <a class="active" href="#Home">Home</a>
+    <a href="#Slideshow">Slideshow</a>
+    <a href="#About">About</a>
+    <a href="#Github">Github</a>
+    <a href="#Noteworthy">Projects</a>
+    <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+  </div>
+
+  <!-- HOME -->
+
+  <div id="Home">
+    <br> <!-- Inserted to add space between navbar and heading -->
+    <br>
+
+    <!--  VIDEO  -->
+    <div id="Home">
+      <video autoplay muted loop id="Typing_Video">
+        <!-- Silently plays video in a loop-->
+        <source src="./Images/Typing_Video2.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. <!-- Display message if video fails-->
+      </video>
     </div>
 
-<!-- HOME -->
+    <!-- VIDEO -->
+    <div class="Video_Text">
+      <h1 style="color:white;">Casey Fairbanks' Portfolio</h1>
+      <p>
+        <strong>
+          <center>
+            <q>
+              You can't use up creativity.
+              <br>The more you use, the more you have.
+            </q>
+            <br>-Maya Angelou<br>
+            <br>
+            Hello! My name is Casey welcome to my portfolio website.
+            On it, I will tell you about my background and experience.<br>
+            <br>Thank you, I look forward to hearing from you!
+          </center>
+        </strong>
+      </p>
+    </div>
 
-    <div id="Home">
-        <br> <!-- Inserted to add space between navbar and heading -->
+    <!-- Slideshow -->
+    <div id="Slideshow">
+      <div id="Slideshow_Background">
+        <div id="Slideshow_Container">
+
+          <div class="mySlides fade">
+            <div class="Slide_Number">1 / 6</div>
+            <img class="Slide_Show_Images" src="Images/Selfie.jpg" style="width:100%">
+            <div class="text">I am here to help with your project!</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="Slide_Number">2 / 6</div>
+            <img class="Slide_Show_Images" src="Images/HTML_CSS_and_JavaScript.jpg" style="width:100%">
+            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="Slide_Number">3 / 6</div>
+            <img class="Slide_Show_Images" src="Images/Python.png" style="width:100%">
+            <div class="text">the programming language Python,</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="Slide_Number">4 / 6</div>
+            <img class="Slide_Show_Images" src="Images/C_Sharp_and_Dot_NET.png" style="width:100%">
+            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="Slide_Number">5 / 6</div>
+            <img class="Slide_Show_Images" src="Images/SQL_and_Database.jpg" style="width:100%">
+            <div class="text">databases and SQL.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="Slide_Number">6 / 6</div>
+            <img class="Slide_Show_Images" src="Images/Laptop_plants.jpg" style="width:100%">
+            <div class="text">
+              <a onclick="openForm()" href="#Contact" style="color:white;">Reach out to me!</a>
+            </div>
+          </div>
+
+          <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
         <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!--  VIDEO  -->
-    <div id="Home">
-        <video autoplay muted loop id="Typing_Video"> <!-- Silently plays video in a loop-->
-            <source src="./Images/Typing_Video2.mp4" type="video/mp4">
-            Your browser does not support HTML5 video. <!-- Display message if video fails-->
-        </video>
+  <!-- ABOUT -->
+
+  <div class="Row" id="About">
+    <div class="Column_2">
+      <!-- Left collumn -->
+      <img src="./Images/Workspace.jpg" alt="Workspace">
     </div>
 
-<!-- VIDEO -->
-        <div class="Video_Text">
-            <h1 style="color:white;">Casey Fairbanks Portfolio</h1>
-                <p>
-                    <strong>
-                        <center>
-                            <q> You can't use up creativity.
-                                <br>The more you use, the more you have.
-                                </q>
-                                <br>-Maya Angelou<br>
-                                <br>
-                                Hello! My name is Casey, welcome to my portfolio website. 
-                                Here is a glimpse of my skills and experience.<br>
-                                <br>Thank you, I look forward to hearing from you!
-                        </center>
-                    </strong>
-                </p>
-        </div>
+    <div class="Column_1">
+      <!-- Right Column -->
+      <h1>About</h1>
+      <p>
+      I am a driven professional who has a passion for tech. Like many from the Pacific North West,
+      I enjoy the outdoors and have even developed a green thumb so I can have the outdoors indoors! <br>
+      <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="-blank">The Tech Academy</a>'s
+      Software Developer Boot Camp, having training and experience in the following web and programming languages: HTML,
+      CSS, JavaScript, SQL, C# and more. <br>
+      <br>I have training as a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+      </p>
+    </div>
+  </div>
 
-<!-- Slideshow -->
-        <div id="Slideshow">
-            <div id="Slideshow_Background">
-                <div id="Slideshow_Container">
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">1 / 6</div>
-                        <img class="Slide_Show_Images" src="Images/Selfie.jpg" style="width:100%">
-                            <div class="text">I am here to help with your project!</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">2 / 6</div>
-                        <img class="Slide_Show_Images" src="Images/HTML_CSS_and_JavaScript.jpg" style="width:100%">
-                            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">3 / 6</div>
-                        <img class="Slide_Show_Images" src="Images/Python.png" style="width:100%">
-                            <div class="text">the programming language Python,</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">4 / 6</div>
-                        <img class="Slide_Show_Images" src="Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-                            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">5 / 6</div>
-                        <img class="Slide_Show_Images" src="Images/SQL_and_Database.jpg" style="width:100%">
-                            <div class="text">databases and SQL.</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">6 / 6</div>
-                        <img class="Slide_Show_Images" src="Images/Laptop_plants.jpg" style="width:100%">
-                            <div class="text">
-                                <a onclick="openForm()" href="#Contact" style="color:white;">Reach out to me!</a>
-                            </div>
-                    </div>
-
-                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                </div>
-            </div>
-        </div>
+  <!--  GITHUB SECTION  -->
+  <div class="Row" id="Github">
+    <div class="Column_1">
+      <!-- Left column -->
+      <h1>Github</h1>
+      <p>
+        Here you can view my Github showing projects that demonstrate my skills and how they have grown with practice.<br>
+        I continue to learn and add things so keep checking back in with me!
+        <br>
+        <center><a href="https://github.com/Cfairbanx" target="_blank">Casey Fairbanks' GitHub</a></center>
+        <br>
+        Check out my LinkedIn or resume too!
+        <br />
+        <center><a href="https://www.linkedin.com/in/casey-fairbanks-42407174/" target="_blank">Casey's LinkedIn</a></center>
+        <center><a href="https://drive.google.com/file/d/1AG2LVecJbJTKHV2VdkIJUwo5MAcs9nZr/view?usp=sharing" target="_blank">Casey's Resume</a></center>
+      </p>
     </div>
 
-    <!-- ABOUT -->
+    <div class="Column_2">
+      <!-- Right column -->
+      <a href="https://github.com/Cfairbanx" target="_blank"><img src="./Images/GitHub.jpg" alt="GitHub"></a>
+    </div>
+    <!-- NOTEWORTHY PROJECTS-->
+  </div>
 
-    <div class="Row" id="About">
-        <div class="Column_2"> <!-- Left collumn -->
-            <img src="./Images/Workspace.jpg" alt="Workspace">
-        </div>
-
-        <div class="Column_1"> <!-- Right Column -->
-            <h1>About</h1>
-                <p>
-					I am a driven professional who has a passion for tech. Like many from the Pacific North West, 
-					I enjoy the outdoors and have even developed a green thumb so I can have the outdoors indoors! <br>
-					<br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="-blank">The Tech Academy</a>'s 
-					Software Developer Boot Camp, having training and experience in the following web and programming languages: HTML, 
-					CSS, JavaScript, SQL, C# and more. <br>
-					<br>I have training as a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
-				</p>
-        </div>
+  <div class="Row" id="Noteworthy">
+    <div class="Column_2">
+      <!-- Left column -->
+      <img src="./Images/codingpic.jpg" alt="Code">
     </div>
 
-<!--  GITHUB SECTION  -->
-    <div class="Row" id="Github">
-        <div class="Column_1"> <!-- Left column -->
-            <h1>Github</h1>
-                <p>
-					Here you can view my Github repositories. These projects demonstrate my skills and how they have grown with practice.<br>
-					<br>
-                    I continue to learn and add things so keep checking back in with me!
-					<br>
-					<br>
-                    <center><a href="https://github.com/Cfairbanx" target="_blank">Casey Fairbanks' GitHub</a></center>
-                    <br>
-				</p>
-        </div>
-
-        <div class="Column_2"> <!-- Right column -->
-            <a href="https://github.com/Cfairbanx" target="_blank"><img src="./Images/GitHub.jpg" alt="GitHub"></a>
-        </div>
-<!-- NOTEWORTHY PROJECTS-->		
+    <div class="Column_1">
+      <!-- Right Column -->
+      <h1>Noteworthy Projects</h1>
+      <p>
+        So far, I have gained experience in 6 languages and multiple IDE's,<br>
+        a flexibility to learning and a strong problem-solving mindset.<br>
+        <br>
+        If you have the time, check out these noteworthy projects!<br>
+        <br>
+        <center><a href="https://github.com/Cfairbanx/Django-TechProject" target="_blank">Django Hotel Project</a></center><br>
+        <center><a href="https://github.com/Cfairbanx/Twenty_One/tree/main" target="_blank">Console Program Twenty-One</a></center><br>
+        <center><a href="https://github.com/Cfairbanx/MVC_APP/tree/main/CarInsurance" target="_blank">Mock Car Insurance Website</a></center>
+        <br>
+      </p>
     </div>
-	
-	    <div class="Row" id="Noteworthy">
-        <div class="Column_2"> <!-- Left column -->
-            <img src="./Images/codingpic.jpg" alt="Code">
-        </div>
+  </div>
 
-        <div class="Column_1"> <!-- Right Column -->
-            <h1>Noteworthy Projects</h1>
-                <p>
-					So far, I have gained experience in 6 languages and multiple IDE's,<br>
-					a flexibility to learning and a strong problem-solving mindset.<br>
-					<br>
-					If you have the time, check out these noteworthy projects!<br>
-					<br>
-					<center><a href="https://github.com/Cfairbanx/Django-TechProject" target="_blank">Django Hotel Project</a></center><br>
-					<center><a href="https://github.com/Cfairbanx/Twenty_One/tree/main" target="_blank">Console Program Twenty-One</a></center><br>
-					<center><a href="https://github.com/Cfairbanx/MVC_APP/tree/main/CarInsurance" target="_blank">Mock Car Insurance Website</a></center>
-					<br>
-				</p>
-        </div>
+  <!-- CONTACT SECTION -->
+  <div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+    <div class="form-popup" id="myForm">
+      <form action="https://formspree.io/ccfairba@gmail.com" method="POST" class="form-container">
+        <h1>Contact</h1>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Type your name here" name="name" required>
+        <label for="phone"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter your phone number here" name="phone">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter your email here" name="email" required>
+        <label for="message"><b>Message</b></label>
+        <input type="text" placeholder="Enter your message here" name="message">
+
+        <button type="submit" class="btn">SUBMIT</button>
+        <buttom type="button" class="btn cancel" onclick="closeForm()">CLOSE</buttom>
+      </form>
     </div>
+  </div>
 
-<!-- CONTACT SECTION -->
-    <div id="Contact">
-        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/ccfairba@gmail.com" method="POST" class="form-container">
-                    <h1>Contact</h1>
-                        <label for="name"><b>Name</b></label>
-                            <input type="text" placeholder="Type your name here" name="name" required>
-                        <label for="phone"><b>Phone Number</b></label>
-                            <input type="text" placeholder="Enter your phone number here" name="phone">
-                        <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter your email here" name="email" required>
-                        <label for="message"><b>Message</b></label>
-                            <input type="text" placeholder="Enter your message here" name="message">
+  <!-- FOOTER SECTION  -->
 
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <buttom type="button" class="btn cancel" onclick="closeForm()">CLOSE</buttom>
-                </form>
-            </div>
-    </div>
-
-<!-- FOOTER SECTION  -->
-
-<footer>
+  <footer>
     <p>
-        <center>&copy Prosper Consulting inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+      <center>&copy Prosper Consulting inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
     </p>
-</footer>
+  </footer>
 
-<script src="JS/portfolio.js"></script>
+  <script src="JS/portfolio.js"></script>
 </body>
 
 </html>
+
